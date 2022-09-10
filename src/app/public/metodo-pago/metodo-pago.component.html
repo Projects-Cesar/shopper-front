@@ -1,0 +1,21 @@
+<app-nav-bar [nameSection]="nameSection" [nameRuta]="nameRuta"></app-nav-bar>
+
+<div class="container">
+
+    <div class="table-responsive mt-4">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>MEDIO DE PAGO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let mp of metodPagos">
+            <td>{{ mp.cod_metodo_pago }}</td>
+            <td>{{ mp.medio_pago }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>

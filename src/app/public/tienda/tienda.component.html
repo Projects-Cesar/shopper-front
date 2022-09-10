@@ -1,0 +1,38 @@
+<app-nav-bar [nameSection]="nameSection" [nameRuta]="nameRuta"></app-nav-bar>
+
+<div class="container">
+    <div class="row mt-4 text-center">
+      <div class="col">
+        <button type="button" class="btn btn-success">
+          <i class="bi bi-plus-lg"></i>
+          Nueva Tienda
+        </button>
+      </div>
+      <div class="col">
+        <!-- <button type="button" class="btn btn-success">
+          <i class="bi bi-plus-lg"></i>
+          Nueva Tienda
+        </button> -->
+      </div>
+    </div>
+    <div class="table-responsive mt-4">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>NOMBRE</th>
+            <th>DIRECCIÓN</th>
+            <th>TELÉFONO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let t of tiendas">
+            <td>{{ t.cod_tienda }}</td>
+            <td>{{ t.nombre_tienda }}</td>
+            <td>{{ t.direccion }}</td>
+            <td>{{ t.telefono }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>

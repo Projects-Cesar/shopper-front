@@ -1,0 +1,21 @@
+<app-nav-bar [nameSection]="nameSection" [nameRuta]="nameRuta"></app-nav-bar>
+
+<div class="container">
+
+    <div class="table-responsive mt-4">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>NOMBRE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cp of catProds">
+            <td>{{ cp.cod_categoria }}</td>
+            <td>{{ cp.nombre }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
